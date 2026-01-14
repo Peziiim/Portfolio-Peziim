@@ -17,31 +17,84 @@
 
       <section id="center">
         <nav>
-          <svg 
-            id="arrow-left"
+          <div id="left-container">
+            <div id="arrow-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h2>Eduardo</h2>
+              <h5>3 projetos</h5>
+            </div>
+          </div>
+          <svg
+            id="lupa"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
-            class="bi bi-arrow-left"
+            fill="currentColor"
+            class="bi bi-search"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
-              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
             />
           </svg>
-
-          <div>
-            <h2>Eduardo</h2>
-            <h5>3 projetos</h5>
-          </div>
         </nav>
-        <section id="header">
-          <div id="he-container ">
-            <img src=" " alt="" />
+        <div id="header">
+          <img id="head-img" src="./assets/header.png" alt="" />
+          <img id="profile" src="./assets/profile.png" alt="" />
+
+          <div id="btn-cont">
+            <button class="btn-h">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                />
+              </svg>
+            </button>
+            <button class="btn-h">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                />
+              </svg>
+            </button>
+            <button id="seguir">Seguir</button>
           </div>
-        </section>
+
+          <div id="bio">
+             <article id="user">
+                <h2>Eduardo</h2>
+             </article>
+          </div>
+        </div>
       </section>
 
       <section id="left-bar"></section>
