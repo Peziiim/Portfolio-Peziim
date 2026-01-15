@@ -7,12 +7,18 @@
 
 @font-face {
     font-family: titles;
-    src: url("../assets/helvetica-neue-5/HelveticaNeueMedium.otf");
+    src: url("../assets/helvetica-neue-5/HelveticaNeueHeavy.otf");
 }
 
 @font-face {
     font-family: texts;
     src: url("../assets/helvetica-neue-5/HelveticaNeueThin.otf");
+}
+
+
+@font-face {
+    font-family: mini;
+    src: url("../assets/helvetica-neue-5/HelveticaNeueLight.otf");
 }
 
 #main {
@@ -25,7 +31,7 @@
 #right-bar {
     border-right: 1px solid var(--border-color);
     height: 100vh;
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -63,17 +69,29 @@ nav {
     cursor: pointer;
 }
 
-nav h2 {
+.titles {
     font-family: titles;
     font-weight: 550;
     font-size: 1.2rem;
     margin-bottom: 3px;
 }
 
+.texts {
+    font-family: texts;
+    color: rgb(117, 115, 115);
+    opacity: .7;
+}
+
 nav h5 {
     font-family: texts;
     color: rgb(117, 115, 115);
     opacity: .7;
+    text-decoration: none;
+
+}
+
+#main-header {
+    margin-bottom: 100vh;
 }
 
 #header {
@@ -81,6 +99,7 @@ nav h5 {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 
 #head-img {
@@ -101,7 +120,7 @@ nav h5 {
     justify-content: end;
     align-items: center;
     position: absolute;
-    top: 95%;
+    top: 105%;
     right: 5%;
     width: 100%;
     gap: 5px;
@@ -133,7 +152,7 @@ nav h5 {
   color: black;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 645;
   padding: 6px 16px;
   font-size: 1rem;
   border: none;
@@ -141,12 +160,43 @@ nav h5 {
   cursor: pointer;
 }
 
+#bio-cont{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bio-align{
+    padding-left: 3%;
+}
+
+#name {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#username {
+    color: rgb(117, 115, 115);
+    font-size: 18px;
+    font-family: mini;
+    text-decoration: none;
+}
+
+#bio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
 
 #left-bar {
     border-left: 1px solid var(--border-color);;
     height: 100vh;
-    width: 35%;
-    padding: 5% 0 0 10%;
+    width: 20%;
+    padding: 5% 0 0 20%;
 }
 
 #arrow-left {
