@@ -1,163 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/gitlab.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Eduardo Oliveira</title>
-  </head>
-  <body>
+</head>
+<body>
     <div id="main">
-      <section id="right-bar">
-        <div>
-          <h1>oi</h1>
-        </div>
-      </section>
+        <!-- SIDEBAR ESQUERDA -->
+        <section id="left-bar">
+            <nav id="nav-menu">
+                <div id="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.491-.047 3.293 3.293 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </div>
 
-      <section id="center">
-        <nav id="main-b">
-          <div id="left-container">
-            <div id="arrow-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="white"
-                class="bi bi-arrow-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                />
-              </svg>
+                <ul id="menu-items">
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6.5 1a.5.5 0 0 0-.5.5v3H2.5a.5.5 0 0 0-.5.5v3H.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3v2.5a.5.5 0 0 0 .5.5h3v2.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-2.5V7.5a.5.5 0 0 0-.5-.5h-3V1.5a.5.5 0 0 0-.5-.5h-3z"/>
+                        </svg>
+                        <span>Página Inicial</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <span>Explorar</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742.104.399.223.772.361 1.126.517 1.495 1.254 2.931 3.349 5.921V16h3v-2.252c2.095-2.99 2.832-4.426 3.349-5.921.138-.354.257-.727.361-1.126C12.134 8.197 12 6.628 12 6c0-2.668-.992-4.95-2.203-5.918A1 1 0 0 0 8 1.918Z"/>
+                        </svg>
+                        <span>Notificações</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 12.5A1.5 1.5 0 0 1 2.5 11h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 11h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                        </svg>
+                        <span>Bate-papo</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 .5a.5.5 0 0 1 .5.5v3h3V1a.5.5 0 1 1 1 0v3h3V1a.5.5 0 1 1 1 0v3a2 2 0 0 1-2 2h-.5v3h2.5a.5.5 0 0 1 0 1h-2.5v2h2.5a.5.5 0 0 1 0 1h-2.5v2.5a.5.5 0 0 1-1 0V14h-3v2.5a.5.5 0 0 1-1 0V14H3.5a.5.5 0 0 1 0-1H6v-2H3.5a.5.5 0 0 1 0-1H6V8.5H2.5a.5.5 0 0 1 0-1H6V4H2.5a.5.5 0 0 1 0-1H6V.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        <span>Itens salvos</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        <span>Creator Studio</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1V4s0-1-1-1h-1v6.258a1 1 0 0 0 .995 1.001H14v2zm-4-6h5.933a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5h-5.933V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V8zM1 1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1z"/>
+                        </svg>
+                        <span>Comunidades</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                        </svg>
+                        <span>Premium</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm.5 4.5H5v.5a2.5 2.5 0 0 0 5 0v-.5z"/>
+                        </svg>
+                        <span>Perfil</span>
+                    </li>
+                    <li class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                        <span>Mais</span>
+                    </li>
+                </ul>
+
+                <button id="tweet-btn">Postar</button>
+            </nav>
+        </section>
+
+        <!-- SEÇÃO CENTRAL -->
+        <section id="center">
+            <nav id="main-b">
+                <div id="left-container">
+                    <div id="arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="titles">Eduardo</h2>
+                        <h5 class="texts">3 projetos</h5>
+                    </div>
+                </div>
+                <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </nav>
+
+            <div id="header">
+                <img id="head-img" src="./assets/header.png" alt="" />
+                <img id="profile" src="./assets/profile.png" alt="" />
+
+                <div id="btn-cont">
+                    <button class="btn-h">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                        </svg>
+                    </button>
+                    <button class="btn-h">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                    </button>
+                    <button id="seguir"><a href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">Seguir</a></button>
+                </div>
             </div>
 
-            <div>
-              <h2 class="titles">Eduardo</h2>
-              <h5 class="texts">3 projetos</h5>
+            <div id="bio-cont">
+                <article class="bio-align">
+                    <h2 class="titles" id="name">Eduardo Oliveira</h2>
+                    <h5 class="texts">
+                        <a id="username" href="https://github.com/Peziiim">@Peziim</a>
+                    </h5>
+                </article>
+
+                <article class="bio-align">
+                    <h4 id="bio">
+                        Desenvolvedor de software <br />Especializado em Web Design e automações
+                    </h4>
+                </article>
+                <div>
+                    <article class="bio-align icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="gray" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <h5>São Paulo, SP</h5>
+                    </article>
+                    <article class="bio-align icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="grey" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                            <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <h5>Ingressou na programação em Setembro de 2024</h5>
+                    </article>
+                </div>
+
+                <article id="seguidores" class="bio-align">
+                    <h5>406 <span>seguidores</span></h5>
+                    <h5>406 <span>seguindo</span></h5>
+                </article>
+                <nav id="about">
+                    <ul>
+                        <li>Projetos</li>
+                        <li>Sobre mim</li>
+                        <li>Redes</li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-          <svg
-            id="lupa"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-            />
-          </svg>
-        </nav>
-        <div id="header">
-          <img id="head-img" src="./assets/header.png" alt="" />
-          <img id="profile" src="./assets/profile.png" alt="" />
 
-          <div id="btn-cont">
-            <button class="btn-h">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-three-dots"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
-                />
-              </svg>
-            </button>
-            <button class="btn-h">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-envelope"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                />
-              </svg>
-            </button>
-            <button id="seguir"><a href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">Seguir</a></button>
-          </div>
-        </div>
-        <div id="bio-cont">
-          <article class="bio-align">
-            <h2 class="titles" id="name">Eduardo Oliveira</h2>
-            <h5 class="texts">
-              <a id="username" href="https://github.com/Peziiim">@Peziim</a>
-            </h5>
-          </article>
+            <!-- POSTS FEED -->
+            <div id="posts-container">
+                <div class="post">
+                    <img src="./assets/profile.png" alt="profile" class="post-avatar">
+                    <div class="post-content">
+                        <div class="post-header">
+                            <h4 class="post-author">Eduardo Oliveira</h4>
+                            <span class="post-handle">@Peziim</span>
+                            <span class="post-time">59 min</span>
+                        </div>
+                        <p class="post-text">Trabalhando em projetos incríveis de web design e automações. Adoraria compartilhar meu progresso com vocês!</p>
+                        <div class="post-stats">
+                            <span>2 <i class="stat-icon">💬</i></span>
+                            <span>3 <i class="stat-icon">🔄</i></span>
+                            <span>15 <i class="stat-icon">❤️</i></span>
+                            <span>33 <i class="stat-icon">📊</i></span>
+                        </div>
+                    </div>
+                </div>
 
-          <article class="bio-align">
-            <h4 id="bio">
-              Desenvolvedor de software <br />Especializado em Web Design e
-              automações
-            </h4>
-          </article>
-          <div>
-            <article class="bio-align icons">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="16"
-                fill="gray"
-                class="bi bi-geo-alt"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
-                />
-                <path
-                  d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
-                />
-              </svg>
-              <h5>São Paulo, SP</h5>
-            </article>
-            <article class="bio-align icons">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="16"
-                fill="grey"
-                class="bi bi-calendar4-week"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"
-                />
-                <path
-                  d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-              <h5>Ingressou na programação em Setembro de 2024</h5>
-            </article>
-          </div>
+                <div class="post">
+                    <img src="./assets/profile.png" alt="profile" class="post-avatar">
+                    <div class="post-content">
+                        <div class="post-header">
+                            <h4 class="post-author">Eduardo Oliveira</h4>
+                            <span class="post-handle">@Peziim</span>
+                            <span class="post-time">2h</span>
+                        </div>
+                        <p class="post-text">Novo portfolio sendo desenvolvido! Confira em breve todas as atualizações sobre meus projetos mais recentes.</p>
+                        <div class="post-stats">
+                            <span>1 <i class="stat-icon">💬</i></span>
+                            <span>5 <i class="stat-icon">🔄</i></span>
+                            <span>24 <i class="stat-icon">❤️</i></span>
+                            <span>42 <i class="stat-icon">📊</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <article id="seguidores" class="bio-align">
-            <h5>
-              406 <span>seguidores</span></h5>
-            <h5>406 <span>seguindo</span></h5>
-          </article>
-          <nav id="about">
-            <ul>
-              <li>Projetos</li>
-              <li>Sobre mim</li>
-              <li>Redes</li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+        <!-- SIDEBAR DIREITA -->
+        <section id="right-bar">
+            <div id="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <input type="text" placeholder="Buscar..." />
+            </div>
 
-      <section id="left-bar"></section>
+            <div id="suggestions-container">
+                <h3 class="suggestion-title">Talvez você curta</h3>
+                
+                <div class="suggestion-card">
+                    <div class="suggestion-header">
+                        <img src="./assets/profile.png" alt="profile" class="suggestion-avatar">
+                        <button class="btn-follow">Seguir</button>
+                    </div>
+                    <h4 class="suggestion-name">Metal Rules</h4>
+                    <span class="suggestion-handle">@H3avyMetalRules</span>
+                    <p class="suggestion-bio">Apaixonado por Rock & Metal</p>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-header">
+                        <img src="./assets/profile.png" alt="profile" class="suggestion-avatar">
+                        <button class="btn-follow">Seguir</button>
+                    </div>
+                    <h4 class="suggestion-name">Fer</h4>
+                    <span class="suggestion-handle">@sasaukage_</span>
+                    <p class="suggestion-bio">Designer e ilustrador digital</p>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-header">
+                        <img src="./assets/profile.png" alt="profile" class="suggestion-avatar">
+                        <button class="btn-follow">Seguir</button>
+                    </div>
+                    <h4 class="suggestion-name">riel</h4>
+                    <span class="suggestion-handle">@_linui</span>
+                    <p class="suggestion-bio">Dev frontend & design enthusiast</p>
+                </div>
+
+                <a href="#" class="show-more">Mostrar mais</a>
+            </div>
+
+            <div id="trending">
+                <h3 class="trending-title">O que está acontecendo</h3>
+                
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <span class="trend-category">Música • Assunto do Momento</span>
+                    </div>
+                    <h4 class="trend-name">Rocky</h4>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <span class="trend-category">Assunto do Momento em Brasil</span>
+                    </div>
+                    <h4 class="trend-name">Toffoli</h4>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <span class="trend-category">Televisão • Assunto do Momento</span>
+                    </div>
+                    <h4 class="trend-name">#BBB26</h4>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <span class="trend-category">Esportes • Assunto do Momento</span>
+                    </div>
+                    <h4 class="trend-name">JHON JHON</h4>
+                </div>
+
+                <a href="#" class="show-more">Mostrar mais</a>
+            </div>
+
+            <footer id="footer-links">
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Política de cookies</a>
+                <a href="#">Acessibilidade</a>
+            </footer>
+        </section>
     </div>
-  </body>
+</body>
 </html>
